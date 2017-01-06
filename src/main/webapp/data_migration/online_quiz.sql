@@ -1,8 +1,8 @@
 CREATE DATABASE  IF NOT EXISTS `crossover_test` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `crossover_test`;
+USE `online_quiz`;
 -- MySQL dump 10.13  Distrib 5.5.41, for debian-linux-gnu (i686)
 --
--- Host: 127.0.0.1    Database: crossover_test
+-- Host: 127.0.0.1    Database: online_quiz
 -- ------------------------------------------------------
 -- Server version	5.5.41-0ubuntu0.14.04.1
 
@@ -208,4 +208,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-06 13:48:00
