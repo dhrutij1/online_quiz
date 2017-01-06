@@ -1,0 +1,69 @@
+
+----------------------------------------------------------------------
+PREREQUISITES
+----------------------------------------------------------------------
+
+1. JDK1.8
+2. Gradle
+3. MySQL
+4. Apache tomcat 7 (Optional)
+
+Note : I have already added gradle plugin for apache tomcat7 in build.gradle file itself.
+Hence, It is not compulsary to have external apache tomcat server.
+
+
+----------------------------------------------------------------------
+DATABASE CONFIGURATION
+----------------------------------------------------------------------
+
+Restore given sql script in under SQL folder into your local mysql server.
+
+you are required to change local mysql configuratin in database.properties file under src/main/resources folder
+to connect your local mysql from application.
+
+Change below properties as per your requirement
+
+# JDBC Configuration
+
+jdbc.url = jdbc:mysql://localhost:3306/online_quiz
+jdbc.username = <your_mysql_user>
+jdbc.password = <your_mysql_password>
+
+----------------------------------------------------------------------
+LOG FILE CONFIGURATION
+----------------------------------------------------------------------
+
+Please change below property in log4j.properties file under src/main/resources
+
+
+log4j.appender.APPLICATIONLOG.File=<your_path>/online_quiz.log
+
+
+----------------------------------------------------------------------
+GETTING STARTED
+----------------------------------------------------------------------
+
+To build and run the application please follow below steps.
+
+	1. Install all prerequisite software.
+
+	2. Ensure your mysql service is running.
+
+	3. Change mysql properties as per your local mysql server.
+
+	4. BootRun as it is a gradle configuration
+
+	5. Verify that no errors occurred
+
+	6. Run our automated tests
+
+		gradle test
+
+	7. Hit your server in a browser
+
+		http://localhost:8080
+
+
+
+
+
