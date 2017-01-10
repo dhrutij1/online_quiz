@@ -1,12 +1,5 @@
 package com.quiz.controller;
 
-import com.crossover.test.dto.UserDTO;
-import com.crossover.test.exception.BadRequestException;
-import com.crossover.test.mapper.UserMapper;
-import com.crossover.test.persistence.User;
-import com.crossover.test.service.UserExamService;
-import com.crossover.test.service.UserService;
-import com.crossover.test.utils.Utils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
